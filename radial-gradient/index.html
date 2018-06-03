@@ -41,6 +41,32 @@
         background-size: 50% 50%;
         background-repeat: no-repeat;
       }
+
+      .coupon {
+        position: relative;
+        margin-top: 10px;
+        width: 320px;
+        height: 50px;
+        background: #58b;
+      }
+      .coupon:before {
+        content: '';
+        position: absolute;
+        left: -2.5px;
+        top: 0;
+        display: inline-block;
+        height: 100%;
+        border-left: 5px dotted #fff;
+      }
+      .coupon:after {
+        content: '';
+        position: absolute;
+        right: -2.5px;
+        top: 0;
+        display: inline-block;
+        height: 100%;
+        border-left: 5px dotted #fff;
+      }
     </style>
   </head>
   <body>
@@ -49,5 +75,7 @@
         <div class="est"></div>
       </div>
     </div>
+
+    <div class="coupon"></div>
   </body>
 </html>
